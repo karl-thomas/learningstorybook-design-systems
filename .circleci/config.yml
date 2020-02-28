@@ -11,7 +11,7 @@ jobs:
           steps:
             - run: yarn install
             - run: yarn test
-            - run: yarn chromatic test --app-code=1nv36q9fszb
+            - run: yarn chromatic test --app-code=1nv36q9fszb --exit-zero-on-changes
 workflows:
   build-and-test:
     jobs:
