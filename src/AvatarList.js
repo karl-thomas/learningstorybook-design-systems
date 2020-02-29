@@ -79,19 +79,6 @@ export function AvatarList({ loading, users, userCount, size, ...props }) {
 }
 
 AvatarList.propTypes = {
-  loading: PropTypes.bool,
-  users: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string,
-      avatarUrl: PropTypes.string
-    })
-  ),
-  userCount: PropTypes.number,
-  size: PropTypes.oneOf(Object.keys(sizes))
-};
-
-AvatarList.propTypes = {
   /**
    * Are we loading avatar data from the network?
    */
@@ -114,4 +101,15 @@ AvatarList.propTypes = {
    * AvatarList comes in four sizes. In most cases, you’ll be fine with `medium`.
    */
   size: PropTypes.oneOf(Object.keys(sizes))
+};
+
+AvatarList.defaultProps = {
+  loading: false,
+  users: [
+    { id: "loading", avatarUrl: null, name: "loading" },
+    { id: "loading2", avatarUrl: null, name: "loading" },
+    { id: "loading3", avatarUrl: null, name: "loading" }
+  ],
+  userCount: null,
+  size: "medium"
 };
