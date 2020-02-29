@@ -13,6 +13,7 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
+    "release": "auto shipit",
     "start": "react-scripts start",
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
