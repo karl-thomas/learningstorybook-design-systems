@@ -14,6 +14,7 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
+    "build-storybook-docs": "build-storybook -s public --docs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
