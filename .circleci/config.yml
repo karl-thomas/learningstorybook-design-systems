@@ -13,10 +13,10 @@ jobs:
             - run: yarn test
             - run: yarn chromatic test --app-code=1nv36q9fszb --exit-zero-on-changes
             - run: |
-              if [ $CIRCLE_BRANCH = "master" ]
-              then
-                yarn release
-              fi
+                if [ $CIRCLE_BRANCH = "master" ]
+                then
+                  yarn release
+                fi
 workflows:
   build-and-test:
     jobs:
