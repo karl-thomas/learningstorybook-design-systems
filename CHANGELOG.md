@@ -1,3 +1,15 @@
+# v0.4.0 (Sat Feb 29 2020)
+
+#### 🚀  Enhancement
+
+- Create avatar list component [#8](https://github.com/karl-thomas/learningstorybook-design-systems/pull/8) ([@karl-thomas](https://github.com/karl-thomas))
+
+#### Authors: 1
+
+- Karl Thomas ([@karl-thomas](https://github.com/karl-thomas))
+
+---
+
 # v0.3.1 (Sat Feb 29 2020)
 
 #### 🐛  Bug Fix
